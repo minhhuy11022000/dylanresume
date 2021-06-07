@@ -1,0 +1,227 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	box-sizing: border-box;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+body{
+	background: linear-gradient(to right, #a1c4fd, #c2e9fb);
+}
+
+.resume{
+	width: 850px;
+	background: #fff;
+	margin: 25px auto;
+	display: flex;
+    color: #484848;
+}
+
+.left {
+    width: 300px;
+    padding: 0 20px;
+    background-color: #d1f0f1;
+    padding-bottom: 20px;
+}
+
+.right{
+	width: calc(100% - 300px);
+}
+
+.left img {
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+}
+
+.left .profile-img{
+	text-align: center;
+	padding: 20px 0;
+}
+
+/* Contact */
+
+.title {
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    padding-bottom: 10px;
+    position: relative;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    color: #232323;
+}
+
+.title::before {
+    content: "";
+    position: absolute;
+    top: 35px;
+    left: 0;
+    width: 50px;
+    height: 4px;
+    background-color: #232323;
+}
+
+.left .contact-container .contact .icon {
+    font-size: 20px;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left .contact-container .text {
+    font-size: 13px;
+    width: calc(100% - 40px);
+}
+
+.left .contact-container .li-wrap {
+    display: flex;
+    align-items: center;
+}
+
+
+/* Skill */
+
+.skill-container {
+    list-style-type: circle;
+}
+
+.sk {
+    margin-top: 5px;
+}
+
+.frame-lib-wrap {
+    display: flex;
+}
+
+.frame-lib-left {
+    width: 120px;
+}
+
+.others > ul {
+    list-style-type: disc;
+}
+
+.lstyle > li{
+    margin-left: 30px;
+    list-style: circle;
+}
+
+/* Extra courses */
+.extra-container .title {
+    word-break: keep-all;
+    width: 400px;
+}
+
+.extra-container .info-title a,
+.contact-container .contact .li-wrap .text a {
+    color: #484848;
+    transition: all 500ms;
+}
+    
+.info-title a:hover,
+.contact-container .contact .li-wrap .text a:hover {
+    font-size: larger;
+    font-size-adjust: 20px;
+}
+
+/* About me */
+.header{
+	background: #d1f0f1;
+	padding: 15px 30px;
+	color: #484848;
+	height: 150px;
+}
+
+.header .name{
+	font-size: 42px;
+	text-transform: uppercase;
+	font-weight: 700;
+	color: #232323;
+}
+
+.header .role{
+	font-weight: 400;
+	font-size: 20px;
+}
+
+.header .about{
+	margin-top: 10px;
+	line-height: 30px;
+    
+}
+
+.right-inner{
+	padding: 10px 20px;
+	color: #292b2f;
+}
+
+.right-inner .li-wrap{
+	display: flex;
+	margin-bottom: 15px;
+}
+
+.right-inner .li-wrap .date {
+    width: 130px;
+    color: #39a9cb;
+}
+
+.right-inner .li-wrap .info{
+	width: calc(100%  - 130px);
+	padding-left: 25px;
+	position: relative;
+}
+
+.right-inner .li-wrap .info-title{
+	text-transform: uppercase;
+    font-size: smaller;
+	font-weight: 700;
+	letter-spacing: 1px;
+	color: #39a9cb;
+}
+
+.right-inner .li-wrap .info-com{
+	font-weight: 300;
+	font-size: 14px;
+	margin-top: 3px;
+}
+
+.right-inner .li-wrap .info-cont{
+	margin-top: 8px;
+    font-size: 15px;
+}
+
+.right-inner .li-wrap .info-cont .li-info-cont {
+    line-height: 20px;
+}
+
+.right-inner .li-wrap .info:before{
+	content: "";
+	position: absolute;
+	top: 3px;
+	left: 0;
+	width: 10px;
+	height: 10px;
+	background: #39a9cb;
+	border-radius: 50%;
+}
+
+.right-inner .li-wrap .info:after{
+	content: "";
+	position: absolute;
+	top: 10px;
+	left: 4px;
+	width: 2px;
+	height: 90%;
+	background: #39a9cb;
+}
+
+.right-inner .projects .li-wrap {
+    margin-left: 130px;
+    width: 500px;
+}
+
