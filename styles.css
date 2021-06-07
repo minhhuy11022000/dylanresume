@@ -117,16 +117,61 @@ body{
     width: 400px;
 }
 
+.extra-container .info-title a {
+	font-weight: 800;
+	padding-bottom: 10px;
+}
+
 .extra-container .info-title a,
 .contact-container .contact .li-wrap .text a {
     color: #484848;
-    transition: all 500ms;
+	text-decoration: none;
+  	display: inline-block;
+  	position: relative;
+	
 }
+
+a.effect-underline:after {
+	content: '';
+	position: absolute;
+	left: 0;
+	display: inline-block;
+	height: 1em;
+	width: 100%;
+	border-bottom: 1px solid;
+	margin-top: 10px;
+	opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: scale(0,1);
+	transform: scale(0,1);
+}
+
+a.effect-underline:hover:after {
+  opacity: 1;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+
+/* .extra-container .info-title a,
+.contact-container .contact .li-wrap .text a {
+	position: relative;
+  	display: inline-block;
+	overflow: hidden;
+	background: linear-gradient(to right, midnightblue, midnightblue 50%, royalblue 50%);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color:  transparent;
+	background-size: 200% 100%;
+	background-position: 100%;
+	transition: background-position 500ms ease;
+} */
     
 .info-title a:hover,
 .contact-container .contact .li-wrap .text a:hover {
     font-size: larger;
-    font-size-adjust: 20px;
+    /* font-size-adjust: 20px; */
+	/* background-position: 0 100%; */
 }
 
 /* About me */
