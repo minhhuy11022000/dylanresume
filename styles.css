@@ -182,9 +182,9 @@ a.effect-underline:hover:after {
 	font-size: 20px;
 }
 
-.header .about{
+.header .about, .left .about{
 	margin-top: 10px;
-	line-height: 30px;
+	line-height: 25px;
     
 }
 
